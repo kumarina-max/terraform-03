@@ -36,3 +36,30 @@ variable "vms_ssh_root_key" {
   default     = "<your_ssh_ed25519_key>"
   description = "ssh-keygen -t ed25519"
 }
+
+
+
+# Переменные для формирования имени ВМ через интерполяцию
+variable "project_prefix" {
+  type        = string
+  description = "Общий префикс для всех ВМ"
+  default     = "netology-develop-platform"
+}
+
+variable "role_web" {
+  type        = string
+  description = "Роль для веб-ВМ"
+  default     = "web"
+}
+
+variable "role_db" {
+  type        = string
+  description = "Роль для БД-ВМ"
+  default     = "db"
+}
+
+
+variable "test" {
+  type = list(map(list(string)))
+  description = "Список карт с данными для SSH-подключения"
+}
