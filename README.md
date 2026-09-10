@@ -37,3 +37,24 @@
 Проверено подключение к виртуальным машинам с помощью Ansible.
 
 ![Задание 6](screenshots/task6.png)
+
+### Задание 7
+
+В Terraform Console выполнено удаление третьего элемента
+из списков `subnet_ids` и `subnet_zones`.
+
+```hcl
+merge(
+  local.vpc,
+  {
+    subnet_ids = concat(
+      slice(local.vpc.subnet_ids, 0, 2),
+      slice(local.vpc.subnet_ids, 3, length(local.vpc.subnet_ids))
+    )
+    subnet_zones = concat(
+      slice(local.vpc.subnet_zones, 0, 2),
+      slice(local.vpc.subnet_zones, 3, length(local.vpc.subnet_zones))
+    )
+  }
+)
+```
