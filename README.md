@@ -29,3 +29,11 @@
 - `fqdn`
 - 
 ![Задание 5](screenshots/task5.png)
+
+### Задание 6
+Добавлен `null_resource`, который запускает `ansible-playbook`
+после создания inventory.
+
+Проверено подключение к виртуальным машинам с помощью Ansible.
+
+![Задание 6](screenshots/task6.png)
