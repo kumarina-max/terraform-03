@@ -61,7 +61,7 @@ merge(
 
 ### Задание 8
 
- В шаблоне  обнаружила две ошибки: отсутствовала закрывающая ] у nat_ip_address и в ключе platform_id присутствовал лишний пробел. Ошибки исправлены.
+ В шаблоне  обнаружила две ошибки: отсутствовала закрывающая ] у nat_ip_address и в ключе platform_id присутствовал лишний пробел. Исправленный шаблон:
  
 ```hcl
  [webservers]
@@ -69,3 +69,10 @@ merge(
 ${i["name"]} ansible_host=${i["network_interface"][0]["nat_ip_address"]} platform_id=${i["platform_id"]}
 %{~ endfor ~}
 ```
+
+### Задание 9
+
+![Задание 9](screenshots/task9.png)
+
+
+![Задание 9.1](screenshots/task9.1.png)
