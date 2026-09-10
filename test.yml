@@ -1,0 +1,21 @@
+---
+- name: Test Ansible connection
+  hosts: all
+  gather_facts: false
+
+  vars:
+    ansible_ssh_user: ubuntu
+
+  pre_tasks:
+    - name: Wait for SSH
+      wait_for:
+        host: "{{ (ansible_ssh_host | default(ansible_host)) | default(inventory_hostname) }}"
+        port: 22
+        delay: 5
+        timeout: 300
+        state: started
+        search_regex: OpenSSH
+
+  tasks:
+    - name: Ping servers
+      ansible.builtin.ping:

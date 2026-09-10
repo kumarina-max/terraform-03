@@ -1,0 +1,24 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Secrets
+*.auto.tfvars
+*.auto.tfvars.json
+*.json
+
+# Terraform lock file — обычно его наоборот стоит хранить
+# .terraform.lock.hcl
+
+# SSH / local files
+*.pem
+*.key
+
+# Ansible
+*.retry
+
+# Local generated files
+inventory.ini
