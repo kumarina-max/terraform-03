@@ -27,7 +27,6 @@
 - `name`
 - `id`
 - `fqdn`
-- 
 ![Задание 5](screenshots/task5.png)
 
 ### Задание 6
