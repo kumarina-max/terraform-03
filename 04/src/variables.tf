@@ -1,7 +1,7 @@
 ###cloud vars
-variable "token" {
+variable "service_account_key_file" {
   type        = string
-  description = "OAuth-token; https://cloud.yandex.ru/docs/iam/concepts/authorization/oauth-token"
+  description = "Path to service account authorized key"
 }
 
 variable "cloud_id" {

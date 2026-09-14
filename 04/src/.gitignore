@@ -8,5 +8,12 @@
 *.tfstate
 *.tfstate.*
 
-# own secret vars store.
-personal.auto.tfvars
+# own secret vars store
+*.auto.tfvars
+
+# Service account keys
+authorized_key.json
+
+# Terraform crash logs
+crash.log
+crash.*.log
