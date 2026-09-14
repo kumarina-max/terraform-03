@@ -36,3 +36,25 @@
 
 ![Задание 1.2](screenshots/task2.1.png)
 
+## Задание 3
+
+Выполнила операции со state:
+
+1. выведен список ресурсов;
+2. VPC и ВМ удалены из Terraform state без удаления из Yandex Cloud;
+3. все ресурсы импортированы обратно;
+4. выполнена проверка terraform plan.
+
+Результат:
+![Задание 3](screenshots/task3.1.png)
+
+![Задание 3.1](screenshots/task3.2.png)
+
+![Задание 3.2](screenshots/task3import.png)
+
+![Задание 3.3](screenshots/task3import2.png)
+
+Новых ресурсов и удалений инфраструктуры нет.
+![Задание 3.4](screenshots/task3plan.png)
+
+
