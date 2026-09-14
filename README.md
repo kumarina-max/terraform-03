@@ -27,16 +27,12 @@
 
 Модуль принимает `env_name`, `zone`, `cidr` и возвращает информацию о subnet через `output`.
 
-Существующие ресурсы перенесены в state модуля без пересоздания.
+Существующие ресурсы перенесены в state модуля без пересоздания.Информация из terraform console о созданном модуле. 
 
-Результат:
+![Задание 2](screenshots/task2.png)
 
-```text
-terraform plan
-
-No changes. Your infrastructure matches the configuration.
 
 Документация модуля сгенерирована с помощью terraform-docs.
 
-
+![Задание 1.2](screenshots/task2.1.png)
 
