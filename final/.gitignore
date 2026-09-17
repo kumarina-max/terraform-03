@@ -1,0 +1,33 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Variables with secrets
+*.tfvars
+!terraform.tfvars.example
+*.auto.tfvars
+*.auto.tfvars.json
+
+# SSH / credentials
+*.pem
+*.key
+authorized_key.json
+id_rsa
+id_rsa.pub
+
+# Environment
+.env
+.env.*
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+
+# Application
+app/.env
