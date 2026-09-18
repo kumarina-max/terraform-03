@@ -35,3 +35,21 @@ variable "vms_ssh_root_key" {
   type        = string
   description = "SSH public key"
 }
+variable "mysql_cluster_name" {
+  type        = string
+  default     = "final-project-mysql"
+  description = "MySQL cluster name"
+}
+
+variable "mysql_database_name" {
+  type        = string
+  default     = "appdb"
+  description = "Application database name"
+}
+
+variable "mysql_user_name" {
+  type        = string
+  default     = "appuser"
+  description = "Application database user"
+}
+

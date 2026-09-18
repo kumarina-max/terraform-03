@@ -1,0 +1,27 @@
+services:
+  web:
+    image: ${APP_IMAGE:-final-project-app:latest}
+    container_name: final-project-app
+    restart: unless-stopped
+
+    ports:
+      - "80:8000"
+
+    environment:
+      DB_HOST: ${DB_HOST}
+      DB_PORT: ${DB_PORT:-3306}
+      DB_NAME: ${DB_NAME}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health')"
+        ]
+      interval: 30s
+      timeout: 5s
+      retries: 3
