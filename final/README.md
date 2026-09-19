@@ -1,10 +1,6 @@
-# Final Project — Terraform + Yandex Cloud
+# Final Project — Terraform + Yandex Cloud Марина Кукушкина
 
-## О проекте
-
-Финальный проект Netology: автоматизированное развёртывание веб-приложения в Yandex Cloud с помощью Terraform.
-
-Используются:
+В рамках проекта необходимо было произвести автоматизированное развёртывание веб-приложения в Yandex Cloud с помощью Terraform. Мною были использованны:
 
 * Terraform
 * Yandex Compute Cloud
@@ -87,6 +83,8 @@ curl http://localhost/health
 ```
 
 Главная страница отображает состояние приложения и результат подключения к MySQL.
+
+![app](screenshots/app.png)
 
 ## Docker
 
