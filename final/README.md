@@ -84,7 +84,6 @@ curl http://localhost/health
 
 Главная страница отображает состояние приложения и результат подключения к MySQL.
 
-![app](screenshots/app.png)
 
 ## Docker
 
@@ -142,15 +141,15 @@ No changes. Your infrastructure matches the configuration.
 
 ### 2. Terraform plan
 
-![Terraform plan](screenshots/terraform-plan.png)
+![Terraform plan](screenshots/tf-plan.png)
 
 ### 3. Docker
 
-![Docker](screenshots/docker.png)
+![Docker](screenshots/docker%20ps.png)
 
-### 4. Yandex Cloud / MySQL
+### 4. Terraform State List
 
-![MySQL](screenshots/mysql.png)
+![state](screenshots/ts-state%20list.png)
 
 ### 5. Lockbox
 
@@ -158,7 +157,7 @@ No changes. Your infrastructure matches the configuration.
 
 ### 6. Container Registry
 
-![Container Registry](screenshots/registry.png)
+![Container Registry](screenshots/container%20registry.png)
 
 ## Безопасность
 
@@ -173,16 +172,3 @@ No changes. Your infrastructure matches the configuration.
 
 Пароль MySQL хранится в Yandex Lockbox.
 
-## Git
-
-Ветка проекта:
-
-```text
-terraform-final
-```
-
-Проверка состояния:
-
-```bash
-git status
-```
